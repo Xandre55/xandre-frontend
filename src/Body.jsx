@@ -36,13 +36,14 @@ export default function Body() {
   setRecipe("");
 
   try {
-    const response = await fetch("https://xandre-backend-production.up.railway.app/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ ingredients }),
-    });
+   const response = await fetch("https://xandre-backend-production.up.railway.app/generate", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ ingredients }),
+});
+
 
     if (!response.ok) throw new Error("Failed to generate recipe");
 
