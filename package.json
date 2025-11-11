@@ -2,7 +2,7 @@
   "name": "chef-xandre",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://xandre55.github.io/xandre-frontend",
+  "homepage": "https://xandre55.github.io/xandre-frontend/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
